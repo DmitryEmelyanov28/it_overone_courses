@@ -1,0 +1,85 @@
+# a = (1, 2, 3, 4, 5, 6)
+# b = (1,)
+# print(a, b)
+# a = ()
+# b = tuple()
+# print(a, b)
+# print(type(a), type(b))
+# a = (1, 2, 3, 4, 5, 6)
+# b = [1, 2, 3, 4, 5, 6]
+# print(a.__sizeof__())
+# print(b.__sizeof__())
+# a = (1, 2, 3, 4, 5, 6)
+# print(a[0:3])
+# print(a[:3])
+# print(a[1:])
+# print(a[2::2])
+# print(a[::2])
+# a = (1, 2, 'Hello', 2)
+# a[0] = 4
+# a = (1, 2, 'Hello', 2)
+# b = list(a)
+# b.append()
+# b = tuple(b)
+#
+# print(b)
+# nested = (1, "do", ["param", 10, 20])
+# print(nested[2])
+# nested[2].append(12345)
+# print(nested)
+# x = (1, 2, 3, 4)
+# y = (5, 6, 7, 8)
+# z = x + y
+# print(z)
+# x = (1, 2, 3, 4)
+# print(x*2)
+# z = x*2 #умножение применяется и к спискам
+# print(z)
+# x = (1, 2, 2, 5, 5, 6, 6)
+# for i in x:
+#     print(i , '-', x.count(i))
+# print('длина кортежа :',len(x))
+# x = (1, 2, 3, 4, 5, 6, 7)
+# print('max =', max(x), 'min =', min(x))  # применяется к спискам тоже
+# x = ('as', 'asd', 'f' , 'qwertf')
+# print('max:',max(x, key=len), 'min :', min(x,key=len))
+# x = (1, 2, 3, 4, 6, 7)
+# print('sum =',sum(x))
+# x = (1, 2, 3, 4, 6, 7)
+# print(x.index(7))
+# print(2 in x)
+# import random
+#
+# list = [random.randint(1, 10) for i in range(10)]
+# print('список :', list)
+# a = tuple(list)
+# print('кортеж :', a)
+# print('min =', min(a), 'max =', max(a))
+# import random
+# list = [random.randint(0, 5) for i in range(10)]
+# list_1 = [random.randint(-5, 0) for n in range(10)]
+# a = tuple(list)
+# b = tuple(list_1)
+# c = a + b
+# print('первый кортеж :', a)
+# print('второй кортеж :', b)
+# print('третий кортеж :', c)
+# print('количество нулей :', c.count(0))
+# a = ('qwer', 'asd', 'zxc',12,23)
+# # c = ', '.join(a)
+# c = ', '.join([str(i) for i in a])
+# print(c)
+# A = (13, 5, 43, 49, 67, 32, 12, 98, 6, 10, 34, 20, 55, 68, 14, 60, 14)
+# B = (53, 21, 4, 23, 76, 3, 43, 12, 54, 342, 21)
+# summa = sum(A)
+# summa_1 = sum(B)
+# print('сумма кортежа A:',summa)
+# print('сумма кортежа B:',summa_1)
+# if summa > summa_1:
+#     print('Сумма в кортеже A больше')
+# else:
+#     print('Сумма в кортеже B больше')
+# a = A.index(min(A))
+# b = B.index(min(B))
+# print('порядковый номер наименьшего элемента кортежа A:', a + 1)
+# print('порядковый номер  наименьшего элемента кортежа B:', b + 1)
